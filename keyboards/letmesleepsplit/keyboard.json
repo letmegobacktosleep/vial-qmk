@@ -36,6 +36,7 @@
             "driver": "vendor",
             "pin": "GP0"
         },
+        "soft_serial_speed": 1,
         "handedness": {
             "matrix_grid": ["GP1", "GP9"]
         },
@@ -119,7 +120,7 @@
                 { "matrix": [9, 5], "x": 15, "y": 4.25 },
                 { "matrix": [9, 6], "x": 16, "y": 4.25 },
                 { "matrix": [9, 7], "x": 17, "y": 4.25 },
-                { "matrix": [4, 5], "x": 6.75, "y": 4.5 },
+                { "matrix": [4, 5], "w": 1.25, "x": 6.75, "y": 4.5 },
                 { "matrix": [9, 1], "w": 1.25, "x": 9.75, "y": 4.5 }
             ]
         }
