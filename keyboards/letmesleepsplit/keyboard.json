@@ -27,7 +27,7 @@
         "brightness_steps": 16,
         "default": {
             "animation": "static_light",
-            "on": "true",
+            "on": true,
             "hue": 180,
             "sat": 128,
             "val": 128,
