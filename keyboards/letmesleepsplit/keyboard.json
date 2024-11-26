@@ -43,9 +43,9 @@
         "driver": "ws2812",
         "split": true,
         "split_count": [1, 1],
-        "hue_steps": 16,
-        "saturation_steps": 16,
-        "brightness_steps": 16
+        "hue_steps": 32,
+        "saturation_steps": 32,
+        "brightness_steps": 32
     },
     "ws2812": {
         "driver": "vendor",

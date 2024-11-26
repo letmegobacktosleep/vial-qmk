@@ -7,5 +7,8 @@
 /* CONSIDER ADDING AN UNLOCK COMBO. SEE DOCUMENTATION. */
 #define VIAL_INSECURE
 
+/* Add rgblight layers */
+#define RGBLIGHT_LAYERS
+
 /* Increase debounce */
 #define DEBOUNCE 10
