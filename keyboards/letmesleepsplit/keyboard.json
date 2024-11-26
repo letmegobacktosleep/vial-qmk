@@ -35,10 +35,10 @@
         "default": {
             "animation": "rainbow_mood",
             "on": true,
-            "hue": 180,
+            "hue": 0,
             "sat": 192,
             "val": 64,
-            "speed": 0
+            "speed": 32
         },
         "driver": "ws2812",
         "split": true,
