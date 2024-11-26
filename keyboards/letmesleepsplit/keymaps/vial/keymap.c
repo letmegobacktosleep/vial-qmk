@@ -102,22 +102,22 @@ const uint16_t PROGMEM encoder_map[][NUM_ENCODERS][2] = {
 
 // caps lock = white
 const rgblight_segment_t PROGMEM my_capslock_layer[] = RGBLIGHT_LAYER_SEGMENTS(
-    {1, 2, HSV_WHITE} // starting at 1st LED, affecting 2 LEDs in the chain, makes it white.
+    {0, 2, HSV_WHITE} // starting at 1st LED, affecting 2 LEDs in the chain, makes it white.
 );
 
 // layer 1
 const rgblight_segment_t PROGMEM my_layer1_layer[] = RGBLIGHT_LAYER_SEGMENTS(
-    {2, 1, HSV_MAGENTA}
+    {0, 2, HSV_MAGENTA}
 );
 
 // layer 2
 const rgblight_segment_t PROGMEM my_layer2_layer[] = RGBLIGHT_LAYER_SEGMENTS(
-    {2, 1, HSV_CORAL}
+    {0, 2, HSV_CORAL}
 );
 
 // layer 3
 const rgblight_segment_t PROGMEM my_layer3_layer[] = RGBLIGHT_LAYER_SEGMENTS(
-    {2, 1, HSV_CHARTREUSE}
+    {0, 2, HSV_CHARTREUSE}
 );
 
 // Define the array of layers. Later layers take precedence
