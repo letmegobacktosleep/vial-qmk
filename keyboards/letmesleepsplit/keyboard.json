@@ -39,6 +39,10 @@
         "hue_steps": 16,
         "saturation_steps": 16
     },
+    "ws2812": {
+        "driver": "vendor",
+        "pin": "GP25"
+    },
     "encoder": {
         "rotary": [
             {"pin_a": "GP8", "pin_b": "GP7", "resolution": 4},
