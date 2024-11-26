@@ -24,7 +24,6 @@
             "static_light": true,
             "rainbow_mood": true
         },
-        "brightness_steps": 16,
         "default": {
             "animation": "static_light",
             "on": true,
@@ -37,11 +36,12 @@
         "split": true,
         "split_count": [1, 1],
         "hue_steps": 16,
-        "saturation_steps": 16
+        "saturation_steps": 16,
+        "brightness_steps": 16
     },
     "ws2812": {
         "driver": "vendor",
-        "pin": "GP25"
+        "pin": "GP16"
     },
     "encoder": {
         "rotary": [
