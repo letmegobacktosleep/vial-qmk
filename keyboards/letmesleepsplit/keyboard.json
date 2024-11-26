@@ -28,7 +28,7 @@
             "animation": "rainbow_mood",
             "on": true,
             "hue": 180,
-            "sat": 128,
+            "sat": 192,
             "val": 64,
             "speed": 0
         },
