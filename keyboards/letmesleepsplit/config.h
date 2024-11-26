@@ -12,3 +12,6 @@
 /* Change Tapping Term increment */
 #define TAPPING_TERM 200
 #define DYNAMIC_TAPPING_TERM_INCREMENT 50
+
+/* Add RGB Lighting for onboard WS2812 led on RP2040 zero */
+#define RGBLIGHT_MAX_LAYERS 4
