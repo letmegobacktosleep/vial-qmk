@@ -6,3 +6,6 @@
 
 /* CONSIDER ADDING AN UNLOCK COMBO. SEE DOCUMENTATION. */
 #define VIAL_INSECURE
+
+/* add rgblight layers */
+#define RGBLIGHT_LAYERS
