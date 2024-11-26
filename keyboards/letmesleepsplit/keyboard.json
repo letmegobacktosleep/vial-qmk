@@ -45,7 +45,8 @@
         "split_count": [1, 1],
         "hue_steps": 32,
         "saturation_steps": 32,
-        "brightness_steps": 32
+        "brightness_steps": 32,
+        "sleep": true
     },
     "ws2812": {
         "driver": "vendor",
