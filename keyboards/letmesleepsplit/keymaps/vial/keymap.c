@@ -125,7 +125,7 @@ const rgblight_segment_t* const PROGMEM my_rgb_layers[] = RGBLIGHT_LAYERS_LIST(
     my_capslock_layer,
     my_layer1_layer,    // Overrides caps lock layer
     my_layer2_layer,    // Overrides other layers
-    my_layer3_layer,     // Overrides other layers
+    my_layer3_layer     // Overrides other layers
 );
 
 void keyboard_post_init_user(void) {
