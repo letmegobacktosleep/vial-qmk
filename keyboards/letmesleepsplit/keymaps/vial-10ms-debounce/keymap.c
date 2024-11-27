@@ -107,17 +107,17 @@ const rgblight_segment_t PROGMEM my_capslock_layer[] = RGBLIGHT_LAYER_SEGMENTS(
 
 // layer 1
 const rgblight_segment_t PROGMEM my_layer1_layer[] = RGBLIGHT_LAYER_SEGMENTS(
-    {0, 2, 170, 255, 128}
+    {0, 2, 160, 255, 128}
 );
 
 // layer 2
 const rgblight_segment_t PROGMEM my_layer2_layer[] = RGBLIGHT_LAYER_SEGMENTS(
-    {0, 2, 200, 255, 128}
+    {0, 2, 210, 255, 128}
 );
 
 // layer 3
 const rgblight_segment_t PROGMEM my_layer3_layer[] = RGBLIGHT_LAYER_SEGMENTS(
-    {0, 2, 250, 255, 128}
+    {0, 2, 255, 255, 128}
 );
 
 // Define the array of layers. Later layers take precedence
