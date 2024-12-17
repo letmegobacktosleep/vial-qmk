@@ -9,3 +9,6 @@
 
 /* add rgblight layers */
 #define RGBLIGHT_LAYERS
+
+/* Set debounce */
+#define DEBOUNCE 5
