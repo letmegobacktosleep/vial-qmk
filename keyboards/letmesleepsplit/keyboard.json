@@ -72,7 +72,7 @@
         },
         "soft_serial_speed": 1,
         "handedness": {
-            "matrix_grid": ["GP1", "GP9"]
+            "matrix_grid": ["GP9", "GP1"]
         },
         "encoder": {
             "right": {
