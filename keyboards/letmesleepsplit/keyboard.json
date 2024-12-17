@@ -54,9 +54,9 @@
     },
     "encoder": {
         "rotary": [
-            {"pin_a": "GP6", "pin_b": "GP5", "resolution": 4},
-            {"pin_a": "GP8", "pin_b": "GP7", "resolution": 4},
-            {"pin_a": "GP4", "pin_b": "GP3", "resolution": 4}
+            {"pin_a": "GP5", "pin_b": "GP6", "resolution": 4},
+            {"pin_a": "GP7", "pin_b": "GP8", "resolution": 4},
+            {"pin_a": "GP3", "pin_b": "GP4", "resolution": 4}
         ]
     },
     "diode_direction": "COL2ROW",
@@ -77,9 +77,9 @@
         "encoder": {
             "right": {
                 "rotary": [
-                    {"pin_a": "GP8", "pin_b": "GP7", "resolution": 4},
-                    {"pin_a": "GP6", "pin_b": "GP5", "resolution": 4},
-                    {"pin_a": "GP4", "pin_b": "GP3", "resolution": 4}
+                    {"pin_a": "GP7", "pin_b": "GP8", "resolution": 4},
+                    {"pin_a": "GP5", "pin_b": "GP6", "resolution": 4},
+                    {"pin_a": "GP3", "pin_b": "GP4", "resolution": 4}
                 ]
             }
         }
