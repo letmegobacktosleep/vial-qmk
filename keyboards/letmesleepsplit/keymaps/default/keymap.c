@@ -46,6 +46,14 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 };
 
+/* name the layers */
+enum layer_names {
+    _BASE,
+    _LAYER1,
+    _LAYER2,
+	_LAYER3,
+};
+
 
 /* `ENCODER_MAP_ENABLE = yes` must be added to the rules.mk at the KEYMAP level. See QMK docs. */
 /* Remove the following code if you do not enable it in your keymap (e.g. default keymap). */
@@ -89,3 +97,26 @@ const uint16_t PROGMEM encoder_map[][NUM_ENCODERS][2] = {
 
 };
 #endif
+
+
+
+// caps lock = white
+const rgblight_segment_t PROGMEM my_capslock_layer[] = RGBLIGHT_LAYER_SEGMENTS(
+    {0, 2, 0, 0, 128} // starting at 1st LED, affecting 2 LEDs in the chain, makes it a bright white
+);
+
+// Define the array of layers. Later layers take precedence
+const rgblight_segment_t* const PROGMEM my_rgb_layers[] = RGBLIGHT_LAYERS_LIST(
+    my_capslock_layer,
+);
+
+void keyboard_post_init_user(void) {
+    // Enable the LED layers
+    rgblight_layers = my_rgb_layers;
+}
+
+/* make the leds do something */
+bool led_update_user(led_t led_state) {
+    rgblight_set_layer_state(0, led_state.caps_lock);
+    return true;
+}
