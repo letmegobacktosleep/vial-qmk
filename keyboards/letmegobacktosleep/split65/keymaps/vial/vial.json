@@ -1,7 +1,7 @@
 {
   "name": "diederik-split-65",
   "vendorId": "0xFEED",
-  "productId": "0xD7EbB",
+  "productId": "0xD7EB",
   "lighting": "none",
   "matrix": {
     "rows": 10,
@@ -12,18 +12,18 @@
       "Split Backspace",
       [
         "L Bottom Row",
-        "L 2.25 tsangan",
-        "L 2.25 plus",
-        "L 3.00",
-        "L 2.75 plus"
+        "2.25 tsangan",
+        "2.25 plus",
+        "3.00",
+        "2.75"
       ],
       [
         "R Bottom Row",
-        "R 2.75 tsangan",
-        "R 2.75 plus",
-        "R 3.00",
-        "R 2.25 plus",
-        "R 2.25 lite"
+        "2.75 tsangan",
+        "2.75 plus",
+        "3.00",
+        "2.25",
+        "2.25 lite"
       ]
     ],
     "keymap": [
