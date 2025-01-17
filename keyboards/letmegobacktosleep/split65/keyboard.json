@@ -24,7 +24,7 @@
     "diode_direction": "COL2ROW",
     "matrix_pins": {
         "rows": ["GP28", "GP29", "GP6", "GP22", "GP23"],
-        "cols": ["GP24", "GP26", "GP27", "GP5", "GP4", "GP3", "GP2", "KC_NO"]
+        "cols": ["GP24", "GP26", "GP27", "GP5", "GP4", "GP3", "GP2", ""]
     },
     "split": {
         "enabled": true,
