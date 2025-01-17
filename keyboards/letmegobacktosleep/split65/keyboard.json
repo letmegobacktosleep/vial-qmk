@@ -29,8 +29,7 @@
     "split": {
         "enabled": true,
         "serial": {
-            "driver": "vendor",
-            "pin": "GP0"
+            "driver": "vendor"
         },
         "soft_serial_speed": 1,
         "handedness": {
