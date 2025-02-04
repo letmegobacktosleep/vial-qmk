@@ -18,6 +18,12 @@
         "mousekey": true,
         "nkro": true
     },
+    "qmk": {
+        "tap_keycode_delay": 10
+    },
+    "build": {
+        "lto": true
+    },
     "indicators": {
         "caps_lock": "GP25"
     },
