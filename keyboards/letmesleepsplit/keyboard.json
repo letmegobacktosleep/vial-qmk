@@ -18,6 +18,9 @@
         "mousekey": true,
         "nkro": true
     },
+    "qmk": {
+        "tap_keycode_delay": 10
+    },
     "rgblight": {
         "led_count": 2,
         "animations": {
