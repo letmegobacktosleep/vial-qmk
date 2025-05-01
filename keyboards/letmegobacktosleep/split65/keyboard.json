@@ -18,15 +18,17 @@
         "mousekey": true,
         "nkro": true
     },
+    "indicators": {
+        "caps_lock": "GP25"
+    },
     "qmk": {
         "tap_keycode_delay": 10
     },
     "build": {
+        "debounce_type": "asym_eager_defer_pk",
         "lto": true
     },
-    "indicators": {
-        "caps_lock": "GP25"
-    },
+    "debounce": 10,
     "diode_direction": "COL2ROW",
     "matrix_pins": {
         "rows": ["GP28", "GP29", "GP6", "GP22", "GP23"],
