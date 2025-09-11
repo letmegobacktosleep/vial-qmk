@@ -385,13 +385,27 @@ void process_action(keyrecord_t *record, action_t action) {
 
 #ifndef NO_ACTION_ONESHOT
     bool do_release_oneshot = false;
-    // notice we only clear the one shot layer if the pressed key is not a modifier.
+
+    // Don't clear one-shot if we're pressing a Tap Dance key
+    bool is_tap_dance_key = false;
+#ifdef TAP_DANCE_ENABLE
+    // Prevent clearing one-shot layer while a tap dance is in progress
+    if (event.pressed) {
+        uint16_t keycode = get_event_keycode(event, false);
+        if (keycode >= QK_TAP_DANCE && keycode <= QK_TAP_DANCE_MAX) {
+            is_tap_dance_key = true;
+        }
+    }
+#endif
+
+    // Original oneshot clearing logic, with tap dance protection
     if (is_oneshot_layer_active() && event.pressed &&
+        !is_tap_dance_key &&
         (action.kind.id == ACT_USAGE || !(IS_MODIFIER_KEYCODE(action.key.code)
 #    ifndef NO_ACTION_TAPPING
-                                          || ((action.kind.id == ACT_LMODS_TAP || action.kind.id == ACT_RMODS_TAP) && (action.layer_tap.code <= MODS_TAP_TOGGLE || tap_count == 0))
+            || ((action.kind.id == ACT_LMODS_TAP || action.kind.id == ACT_RMODS_TAP) && (action.layer_tap.code <= MODS_TAP_TOGGLE || tap_count == 0))
 #    endif
-                                              ))
+             ))
 #    ifdef SWAP_HANDS_ENABLE
         && !(action.kind.id == ACT_SWAP_HANDS && action.swap.code == OP_SH_ONESHOT)
 #    endif
